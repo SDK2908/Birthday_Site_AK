@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Happy Birthday Che💞</title>
+<style>
+  :root{
+    --bg:#fbf7f1;
+    --card:#fffef9;
+    --muted:#6b5b50;
+    --wax:#8b3e2f;
+    --paper:#fbf2e6;
+    --shadow:0 18px 50px rgba(20,12,8,0.12);
+  }
+  *{box-sizing:border-box;font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial}
+  body{margin:0;min-height:100vh;background:linear-gradient(180deg,#fbf7f1,#eef6ff 60%);display:flex;align-items:center;justify-content:center;padding:28px;color:var(--muted)}
+  .wrap{width:min(1100px,96vw)}
+  .card{background:var(--card);border-radius:12px;padding:20px;box-shadow:var(--shadow);border:1px solid rgba(0,0,0,0.03)}
+  .cols{display:flex;gap:18px;align-items:flex-start}
+
+
+    .poem .line.blank {
+      height: 18px;            
+      margin-bottom: 6px;     
+      opacity: 0;              
+      transform: translateY(6px);
+      transition: all .34s ease;
+    }
+    .poem .line.blank.show {   
+      opacity: 0;              
+      transform: translateY(0);
+    }
+
+
+  .left{flex:0 0 38%;padding:12px}
+  .title {
+    position: relative;
+    font-family:"Georgia", serif;
+    font-size:42px;              
+    margin:8px 0;
+    color:#4b372f;
+    text-shadow:0 0 10px rgba(255,192,203,0.4);
+    animation: glow 3s ease-in-out infinite alternate;
+  }
+
+@keyframes glow {
+  from { text-shadow:0 0 8px rgba(255,192,203,0.3); }
+  to   { text-shadow:0 0 20px rgba(255,192,203,0.6); }
+}
+
+  .sub{margin-top:6px;color:#7a6a60}
+  .small{margin-top:10px;font-size:14px;color:#7a6a60}
+  .trigger-row{display:flex;align-items:center;gap:10px;margin-top:18px}
+  .envelope-btn{font-size:38px;background:transparent;border:0;cursor:pointer;padding:8px;border-radius:10px;box-shadow:0 8px 22px rgba(0,0,0,0.06)}
+  .hint{font-size:13px;color:#8b7f77}
+
+ 
+  .right{flex:1;padding:12px;display:flex;flex-direction:column;gap:12px}
+
+  .main-photo {
+    width: 100%;
+    border-radius: 10px;
+    overflow: visible;               
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    background: linear-gradient(180deg,#f6f0e9,#eef7ff);
+    display: block;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 0.25rem;              
+  }
+
+
+  .main-photo img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+    display: block;
+    object-fit: contain;             
+    margin: 0 auto;                 
+  }
+
+  .collage-holder{height:180px;border-radius:10px;overflow:hidden;background:#f6f0e9;display:grid;place-items:center;border:1px dashed rgba(0,0,0,0.06)}
+  .collage-holder img{width:100%;height:100%;object-fit:contain;display:block}
+
+  
+  .overlay{position:fixed;inset:0;background:rgba(8,6,6,0.55);display:none;align-items:center;justify-content:center;padding:28px;z-index:80}
+  .overlay.show{display:flex}
+  .scroll-container{display:flex;flex-direction:column;align-items:center;gap:8px;pointer-events:auto}
+  .roll{
+    width:220px;height:34px;border-radius:18px;background:linear-gradient(180deg,#cdbb9a,#bfa07c);
+    box-shadow:inset 0 -6px 12px rgba(0,0,0,0.12);
+    transform-origin:center center;
+  }
+
+ 
+  .parchment{
+    width:420px; 
+    max-width:92vw;
+    height:620px;
+    background:linear-gradient(180deg,#fff8e6,#f8eddc);
+    padding:34px 28px;
+    border-radius:8px;
+    box-shadow:0 30px 80px rgba(10,6,4,0.45);
+    position:relative;overflow:auto;
+    transform-origin: top center;
+    transform:scaleY(0);
+    transition:transform 700ms cubic-bezier(.2,.9,.24,1);
+    display:flex;flex-direction:column;justify-content:flex-start;
+  }
+  .parchment.open{transform:scaleY(1)}
+  .parchment-header{text-align:center;font-weight:700;color:#5b4338;margin-bottom:10px;font-size:18px}
+  .poem{font-family:"Georgia", serif;font-size:18px;line-height:1.7;color:#3d2c26;padding:6px 8px;flex:1}
+  .poem .line{opacity:0;transform:translateY(8px);transition:all .34s ease}
+  .poem .line.show{opacity:1;transform:none}
+ 
+  
+  .close-x{position:absolute;right:10px;top:8px;background:rgba(255,255,255,0.95);border:0;padding:6px 8px;border-radius:8px;cursor:pointer;box-shadow:0 8px 22px rgba(0,0,0,0.06)}
+
+ 
+  @media (max-width:880px){
+    .cols{flex-direction:column}
+    .left{order:2}
+    .right{order:1}
+    .parchment{width:92vw;height:60vh}
+  }
+  
+  .main-photo img {
+    width: 100% !important;
+    height: 100% !important;
+    object-fit: contain !important;
+    display: block !important;
+    background-color: transparent;
+  }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card" role="main">
+      <div class="cols">
+        
+        <div class="left" aria-label="greeting column">
+          <div class="title" style="font-family:Georgia, serif;font-size:30px;margin:6px 0;color:#4b372f">Happy Birthday, Che💗</div>
+          <div class="sub">Love you always ❤️</div>
+          
+          <div class="trigger-row">
+            <button class="envelope-btn" id="openScroll" title="Open secret scroll">📜</button>
+            <div>
+              <div style="font-weight:700">Samyu's letter</div>
+              
+            </div>
+          </div>
+        </div>
+
+   
+        <div class="right" aria-label="photos column">
+          <div class="main-photo" id="mainPhoto">
+         
+            <img src="main.jpg" alt="Me and Che" onerror="this.style.opacity=.5;this.nextSibling && (this.nextSibling.style.display='block')">
+            <div style="display:none;color:#7a6a60">Replace <code>main.jpg</code> with your photo file</div>
+          </div>
+
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="overlay" id="overlay" aria-hidden="true">
+    <div class="scroll-container" role="dialog" aria-modal="true" aria-label="Vintage vertical scroll">
+      <div class="roll" id="topRoll" aria-hidden="true"></div>
+
+      <div class="parchment" id="parch">
+        <button class="close-x" id="closeScroll">✕</button>
+        <div class="parchment-header">Happy Birthday Che❤️</div>
+
+        <div class="poem" id="poemArea">
+       
+        </div>
+
+        
+      </div>
+
+      <div class="roll" id="bottomRoll" aria-hidden="true"></div>
+    </div>
+  </div>
+
+<script>
+
+  const poemLines = [
+    "You think about",
+    "Everybody in your world.",
+    "You got everything for",
+    "Everybody else.",
+    "",
+    "You think nobody cares",
+    "What you got for you,",
+    "Just remember",
+    "You got me just for you.",
+    "",
+    "I just need you to be happy.",
+    "You deserve everything greatly.",
+    "And I will be here to raise you.",
+    "Even when nobody’s with you.",
+    "",    
+    "Love yaaa❤️"
+  ];
+
+
+  const openBtn = document.getElementById('openScroll');
+  const overlay = document.getElementById('overlay');
+  const parch = document.getElementById('parch');
+  const poemArea = document.getElementById('poemArea');
+  const closeBtn = document.getElementById('closeScroll');
+  
+
+function populatePoem(){
+  poemArea.innerHTML = '';
+  poemLines.forEach((ln, i) => {
+    const d = document.createElement('div');
+
+    if (ln === '' || ln.trim() === '') {
+     
+      d.className = 'line blank';
+      d.innerHTML = '&nbsp;'; 
+    } else {
+      d.className = 'line';
+      d.textContent = ln;
+    }
+
+    d.style.transitionDelay = (i * 220) + 'ms';
+    poemArea.appendChild(d);
+
+
+    setTimeout(() => d.classList.add('show'), 150 + i * 220);
+  });
+}
+
+
+  function openScroll(){
+    overlay.classList.add('show');
+   
+    populatePoem();
+    setTimeout(()=> {
+      parch.classList.add('open'); 
+     
+      
+    }, 80);
+  }
+
+  function closeScroll(){
+   
+    document.querySelectorAll('.poem .line.show').forEach(el => el.classList.remove('show'));
+    parch.classList.remove('open');
+    setTimeout(()=> overlay.classList.remove('show'), 420);
+  }
+
+  openBtn.addEventListener('click', openScroll);
+  closeBtn.addEventListener('click', closeScroll);
+
+  
+  overlay.addEventListener('click', (e) => {
+    if(e.target === overlay) closeScroll();
+  });
+ 
+  document.addEventListener('keydown', (e) => {
+    if(e.key === 'Escape') closeScroll();
+  });
+
+ 
+  overlay.addEventListener('transitionend', (e) => {
+    if(overlay.classList.contains('show')) {
+      closeBtn.focus();
+    }
+  });
+
+</script>
+</body>
+</html>
